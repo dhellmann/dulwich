@@ -62,7 +62,7 @@ class WalkEntry(object):
         :return: For commits with up to one parent, a list of TreeChange
             objects; if the commit has no parents, these will be relative to the
             empty tree. For merge commits, a list of lists of TreeChange
-            objects; see dulwich.diff.tree_changes_for_merge.
+            objects; see dulwich.diff_tree.tree_changes_for_merge.
         """
         if self._changes is None:
             commit = self.commit
